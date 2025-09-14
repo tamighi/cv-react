@@ -1,0 +1,15 @@
+export { default as css } from "./css.png";
+export { default as docker } from "./docker.png";
+export { default as git } from "./git.png";
+export { default as nodejs } from "./nodejs.png";
+export { default as reactjs } from "./reactjs.png";
+export { default as typescript } from "./typescript.png";
+export { default as webpack } from "./webpack.png";
+export { default as cpp } from "./cpp.png";
+export { default as c } from "./c.png";
+export { default as angular } from "./angular.png";
+export { default as figma } from "./figma.png";
+export { default as php } from "./php.png";
+export { default as sql } from "./sql.png";
+export { default as tailwind } from "./tailwind.png";
+export { default as threejs } from "./threejs.png";

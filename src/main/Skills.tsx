@@ -1,4 +1,4 @@
-import BulletPoints from "../Components/BulletPoints";
+import BulletPoints from "../components/BulletPoints";
 
 const SKILLS = [
   "React/React-Native",

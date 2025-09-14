@@ -2,6 +2,14 @@
 
 @theme {
   --color-light: grey;
+  --text-sectionTitle: var(--text-2xl);
+}
+
+hr {
+  border: none;
+  height: 3px;
+  border-top: 3px solid var(--color-light);
+  margin: 1rem 0;
 }
 
 @media print {

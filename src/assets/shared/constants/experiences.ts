@@ -17,7 +17,7 @@ type Experiences = {
 export const experiences = {
   SJeuropeanCommission: {
     title: "Full stack developper",
-    period: "Sep 2023 - August 2023",
+    period: "Sep 2023 - August 2025",
     companyName: "European Comission",
     icon: european_union,
     description: `IT consultant at the European Commission Legal Service.

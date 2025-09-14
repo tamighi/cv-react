@@ -1,3 +1,3 @@
 export * from "./experiences";
 export * from "./projects";
-export * from "./technologies";
+export * from "./skills";

@@ -93,3 +93,8 @@ export const skills = [
     ],
   },
 ] as const;
+
+export const skillStrs = skills.reduce(
+  (prev, curr) => [...prev, ...curr.technologies.map((tech) => tech.name)],
+  [] as string[],
+);

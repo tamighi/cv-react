@@ -1,16 +1,7 @@
+import { skillStrs } from "../assets/shared";
 import BulletPoints from "../components/BulletPoints";
 
-const SKILLS = [
-  "React/React-Native",
-  "Angular",
-  "Symfony (PHP)",
-  "Tailwind (CSS)",
-  "Oracle/Postgres (SQL)",
-  "C/C++",
-  "Figma",
-  "Docker",
-  "GIT",
-];
+const SKILLS = skillStrs;
 
 const Skills = () => {
   return (

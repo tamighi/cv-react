@@ -2,7 +2,12 @@
 
 @theme {
   --color-light: grey;
-  --text-sectionTitle: var(--text-xl);
+}
+
+.text-sectionTitle {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  text-decoration: underline;
 }
 
 hr {

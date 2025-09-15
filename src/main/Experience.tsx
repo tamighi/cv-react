@@ -21,11 +21,7 @@ const Experience = () => {
         </div>
         <p>{experience.description}</p>
         <div className="flex gap-2">
-          <span className="font-bold">Features:</span>
-          <BulletPoints bullets={experience.features} />
-        </div>
-        <div className="flex gap-2">
-          <span className="font-bold">Languages:</span>
+          <span className="font-semibold">Languages:</span>
           <BulletPoints bullets={experience.languages} />
         </div>
       </div>

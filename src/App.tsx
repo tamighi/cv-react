@@ -1,6 +1,7 @@
 import Education from "./main/Education";
 import Experience from "./main/Experience";
 import Header from "./main/Header";
+import Projects from "./main/Projects";
 import Skills from "./main/Skills";
 
 const App = () => {
@@ -12,6 +13,8 @@ const App = () => {
         <Skills />
         <hr />
         <Experience />
+        <hr />
+        <Projects />
         <hr />
         <Education />
       </div>

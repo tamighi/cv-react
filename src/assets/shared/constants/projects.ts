@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 import {
   correctionWebsite,
   cub3d,
@@ -6,16 +7,18 @@ import {
   todocal,
 } from "../images/projects";
 
+import { FiFigma, FiGithub, FiExternalLink } from "react-icons/fi";
+
 type Media = {
   src: string;
 };
 
 type Link = {
   href: string;
-  label: string;
+  icon: IconType;
 };
 
-export type Project = {
+type Project = {
   name: string;
   description: string;
   links: Link[];
@@ -28,7 +31,7 @@ type Projects = {
   [K: string]: Project;
 };
 
-export const projects = {
+const projects = {
   therapyServices: {
     name: "Therapy services",
     description:
@@ -36,11 +39,11 @@ export const projects = {
       "The project was first designed in Figma, then translated in React and Tailwind.",
     links: [
       {
-        label: "Figma",
+        icon: FiFigma,
         href: "https://www.figma.com/design/qfk1O1lY4IgJpreh9inOi1/Marie-Therapy-V1?node-id=54925-66&t=GjyoN93vTMGA6FH0-1",
       },
-      { label: "Github", href: "https://github.com/tamighi/marie-therapy" },
-      { label: "Demo", href: "https://tamighi.github.io/marie-therapy" },
+      { icon: FiGithub, href: "https://github.com/tamighi/marie-therapy" },
+      { icon: FiExternalLink, href: "https://tamighi.github.io/marie-therapy" },
     ],
     medias: [{ src: therapyServices }],
     tools: ["React", "TailwindCSS", "Figma"],
@@ -52,10 +55,13 @@ export const projects = {
       "allowing me to gain hands-on expertise across the full modern web stack.",
     links: [
       {
-        label: "Github",
+        icon: FiGithub,
         href: "https://github.com/tamighi/correction-service-website",
       },
-      { label: "Demo", href: "https://tamighi.github.io/correction-demo" },
+      {
+        icon: FiExternalLink,
+        href: "https://tamighi.github.io/correction-demo",
+      },
     ],
     medias: [
       {
@@ -84,7 +90,7 @@ export const projects = {
     description: `React-Native mobile application for managing tasks withing a calendar.
 
 The focus was on simplicity of user experience (minimizing clicks) and speed (optimistic updates and efficient queries).`,
-    links: [{ label: "Github", href: "https://github.com/tamighi/todocal" }],
+    links: [{ icon: FiGithub, href: "https://github.com/tamighi/todocal" }],
     medias: [
       {
         src: todocal,
@@ -98,7 +104,7 @@ The focus was on simplicity of user experience (minimizing clicks) and speed (op
     description: `Based on the FPS game Wolfenstein 3D, implementing the raycasting technique. 
 
 Developed during my cursus at School 19 and built entirely in C, where we pushed the project to its limits and had a lot of fun experimenting.`,
-    links: [{ label: "Github", href: "https://github.com/Lysique/cub3d" }],
+    links: [{ icon: FiGithub, href: "https://github.com/Lysique/cub3d" }],
     medias: [{ src: cub3d }],
     tools: ["C"],
   },
@@ -106,15 +112,19 @@ Developed during my cursus at School 19 and built entirely in C, where we pushed
     name: "Portfolio 3D",
     description: `A 3D portfolio in progress..`,
     links: [
-      { label: "Github", href: "https://github.com/tamighi/portfolio-3d" },
-      { label: "Demo", href: "https://tamighi.github.io/portfolio-3d/" },
+      { icon: FiGithub, href: "https://github.com/tamighi/portfolio-3d" },
+      { icon: FiExternalLink, href: "https://tamighi.github.io/portfolio-3d/" },
     ],
     medias: [{ src: portfolio3D }],
     tools: ["React", "ThreeJS", "GLSL", "Blender"],
   },
 } satisfies Projects;
 
-export const projectsArray = Object.entries(projects).map(([id, project]) => ({
+const projectsArray = Object.entries(projects).map(([id, project]) => ({
   id: id as keyof typeof projects,
   ...project,
 }));
+
+projectsArray.splice(3);
+
+export { projectsArray, projects };

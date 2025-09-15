@@ -2,7 +2,7 @@
 
 @theme {
   --color-light: grey;
-  --text-sectionTitle: var(--text-2xl);
+  --text-sectionTitle: var(--text-xl);
 }
 
 hr {

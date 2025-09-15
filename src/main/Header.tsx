@@ -10,48 +10,42 @@ const Header = () => {
       <h2 className="text-light text-3xl">Full Stack Developer</h2>
       <div id="links" className="flex flex-col content-center">
         <div className="flex justify-center gap-4">
-          <div className="flex gap-1 items-center">
+          <a
+            href="mailto:thomas.amighi@hotmail.com"
+            className="flex gap-1 items-center"
+          >
             <FiMail />-
-            <a
-              href="mailto:thomas.amighi@hotmail.com"
-              className="text-blue-600"
-            >
-              thomas.amighi@hotmail.com
-            </a>
-          </div>
-          <div className="flex gap-1 items-center">
+            <span className="text-blue-600">thomas.amighi@hotmail.com</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/thomas-amighi"
+            target="_blank"
+            className="flex gap-1 items-center"
+          >
             <FiLinkedin />-
-            <a
-              href="https://www.linkedin.com/in/thomas-amighi"
-              target="_blank"
-              className="text-blue-600"
-            >
-              linkedin.com/in/thomas-amighi
-            </a>
-          </div>
+            <span className="text-blue-600">linkedin.com/in/thomas-amighi</span>
+          </a>
         </div>
 
         <div className="flex justify-center gap-4">
-          <div className="flex gap-1 items-center">
+          <a
+            href="https://github.com/tamighi"
+            target="_blank"
+            className="flex gap-1 items-center"
+          >
             <FiGithub />-
-            <a
-              href="https://github.com/tamighi"
-              target="_blank"
-              className="text-blue-600"
-            >
-              github.com/tamighi
-            </a>
-          </div>
-          <div className="flex gap-1 items-center">
+            <span className="text-blue-600">github.com/tamighi</span>
+          </a>
+
+          <a
+            href="https://tamighi.github.io/portfolio"
+            target="_blank"
+            className="flex gap-1 items-center"
+          >
             <FiExternalLink />-
-            <a
-              href="https://tamighi.github.io/portfolio"
-              target="_blank"
-              className="text-blue-600"
-            >
-              tamighi.github.io/portfolio
-            </a>
-          </div>
+            <span className="text-blue-600">tamighi.github.io/portfolio</span>
+          </a>
         </div>
       </div>
     </div>

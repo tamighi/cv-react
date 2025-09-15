@@ -6,7 +6,10 @@ const Education = () => {
       <h3 className="text-sectionTitle">EDUCATION</h3>
       {educationArray.map((education) => {
         return (
-          <div className="flex flex-col overflow-hidden gap-1">
+          <div
+            key={education.id}
+            className="flex flex-col overflow-hidden gap-1"
+          >
             <div className="flex justify-between items-center gap-4">
               <div className="flex items-center flex-row gap-4">
                 <img

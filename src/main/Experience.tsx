@@ -19,7 +19,7 @@ const Experience = () => {
           </div>
           <span className="font-bold">{experience.period}</span>
         </div>
-        <p>{experience.description}</p>
+        <p className="whitespace-break-spaces">{experience.description}</p>
         <div className="flex gap-2">
           <span className="font-semibold">Languages:</span>
           <BulletPoints bullets={experience.languages} />

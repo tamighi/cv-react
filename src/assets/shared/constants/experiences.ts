@@ -18,11 +18,11 @@ export const experiences = {
   SJeuropeanCommission: {
     title: "Full stack developper",
     period: "Sep 2023 - August 2025",
-    companyName: "European Comission",
+    companyName: "IT consultant at the European Commission Legal Service",
     icon: european_union,
-    description: `IT consultant at the European Commission Legal Service.
-
-Provided essential support in maintaining and enhancing SJ Angular and Symfony web applications, reducing workload by 25% and enabling the department to efficiently manage thousands of documents by implementing AI and EU API powered features.`,
+    description: `• Maintained and migrated Angular and Symfony applications. 
+• Developed and implemented end-to-end tests and a reusable quality code package. 
+• Integrated various features, including an AI chatbot and documents management using EU commission's web services.`,
     features: [
       "Angular & Symfony applications maintenance",
       "Testing & quality frameworks implementation",
